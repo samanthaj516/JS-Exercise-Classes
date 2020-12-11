@@ -229,15 +229,15 @@ describe('Instance of Person', () => {
       expect(student.__proto__.PRAssignment).not.toBeUndefined();
     })
     it('[9] can do a PRAssignment correctly', () => {
-      expect(student.PRAssignment('sql')).toContain(studentAttr.name);
-      expect(student.PRAssignment('sql')).toContain('sql');
+      expect(student.PRAssignment('JS')).toContain(studentAttr.name);
+      expect(student.PRAssignment('JS')).toContain('JS');
     })
     it('[10] has a sprintChallenge method', () => {
       expect(student.__proto__.sprintChallenge).not.toBeUndefined();
     })
     it('[11] can do a sprintChallenge correctly', () => {
-      expect(student.sprintChallenge('sql')).toContain(studentAttr.name);
-      expect(student.sprintChallenge('sql')).toContain('sql');
+      expect(student.sprintChallenge('JS')).toContain(studentAttr.name);
+      expect(student.sprintChallenge('JS')).toContain('JS');
     })
   })
   
