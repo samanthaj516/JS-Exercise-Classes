@@ -42,8 +42,28 @@ class Airplane {
   */
   
  class Person {
-    
+    constructor(attributes){
+      this.name = name;
+      this.age = age;
+      this.stomach = [];
+    }
+    eat(someFood){
+      if (this.stomach < 11){
+        this.stomach.push(someFood);
+      }
+      else {
+        return;
+      }
+    }
+    poop(){
+      return this.stomach = [];
+    }
+    toString(){
+      const str = this.name + "," + this.age;
+      return str;
+    }
   }
+
   
   /*
     TASK 2
